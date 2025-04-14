@@ -1,34 +1,27 @@
 import React from "react";
 
-// ExpenseTable component receives two props:
-// - expenses: an array of expense objects to display
-// - onDelete: a function to handle deleting an expense
+// Renders a table of expenses with delete functionality
 function ExpenseTable({ expenses, onDelete }) {
   return (
-    <table>
+    <table border="1" cellPadding="10">
       <thead>
         <tr>
-          {/* Table headers for each property of an expense */}
-          <th>Expense</th>
+          <th>Name</th>
           <th>Description</th>
           <th>Category</th>
           <th>Amount</th>
-          <th>Date</th>
-          <th>Action</th> {/* Column for the delete button */}
+          <th>Actions</th> {/* Column for Delete Button */}
         </tr>
       </thead>
       <tbody>
-        {/* Loop through each expense in the expenses array */}
         {expenses.map((expense) => (
           <tr key={expense.id}>
-            {/* Display the individual properties of each expense */}
             <td>{expense.name}</td>
             <td>{expense.description}</td>
             <td>{expense.category}</td>
-            <td>{expense.amount}</td>
-            <td>{expense.date}</td>
+            <td>${expense.amount}</td>
             <td>
-              {/* Delete button that calls onDelete with the expense's ID */}
+              {/* Delete button triggers onDelete with expense id */}
               <button onClick={() => onDelete(expense.id)}>Delete</button>
             </td>
           </tr>
@@ -38,5 +31,4 @@ function ExpenseTable({ expenses, onDelete }) {
   );
 }
 
-// Export the component so it can be used in other parts of the app
 export default ExpenseTable;
