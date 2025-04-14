@@ -1,30 +1,30 @@
 # Expense Tracker
 
-A simple React application that allows users to add, search, filter, and delete expenses. This project demonstrates basic state management, controlled forms, component composition, and conditional rendering using React.
+A straightforward React app that helps users manage their expenses efficiently. The app enables users to add, search, filter, and delete expenses. The project illustrates key React concepts such as state management, controlled components, form handling, and conditional rendering.
 
 ## Live Demo
 
-View the live application:  
+Check out the live version of the app here:  
 [https://expensesestarckker.netlify.app/](https://expensesestarckker.netlify.app/)
 
 ## Features
 
-- Add new expenses with a name, amount, and category
+- Add expenses with details like name, amount, and category
 - Filter expenses by category
-- Search expenses by name
-- Delete expenses from the list
-- Responsive layout for desktop and mobile
+- Search for specific expenses by name
+- Remove expenses from the list
+- Responsive design optimized for both desktop and mobile screens
 
 ## Getting Started
 
-Follow the steps below to run the project locally.
+To run this project locally, follow the steps below:
 
 ### Prerequisites
 
-Make sure you have the following installed:
+Ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/)
-- npm (comes with Node.js)
+- npm (comes bundled with Node.js)
 
 ### Installation
 
@@ -33,7 +33,7 @@ Make sure you have the following installed:
 ```bash
 git clone https://github.com/DevBrianKE/expense-tracker.git
 cd expense-tracker
-```
+
 
 2. Install dependencies:
 
@@ -47,8 +47,6 @@ npm install
 npm run dev
 ```
 
-Visit [http://localhost:5173](http://localhost:5173) in your browser to view the app.
-
 ## Project Structure
 
 ```
@@ -59,22 +57,24 @@ src/
 │   └── ExpenseTable.jsx
 ├── App.jsx
 └── main.jsx
+
 ```
 
-- `ExpenseForm`: Form for adding new expenses.
-- `ExpenseSearch`: Input and dropdown to filter/search expenses.
-- `ExpenseTable`: Table that displays the filtered list of expenses.
-- `App.jsx`: Main application component.
-- `main.jsx`: Entry point that renders the App.
+- `ExpenseForm`: A component for adding new expenses.
+- `ExpenseSearch`:A component for searching and filtering expenses.
+- `ExpenseTable`: Displays a table of filtered expenses.
+- `App.jsx`: The main app component that connects everything.
+- `main.jsx`: EThe entry point that renders the App component.
 
 ## Usage
 
-To test the functionality:
+To interact with the app::
 
-- Add an expense by filling out the form and clicking submit.
-- Filter the list by selecting a category from the dropdown.
-- Search for an expense by typing into the search field.
-- Remove an expense using the delete button next to each item.
+- Add an expense by filling out the form and submitting it.
+- Use the category filter to view expenses of a specific type.
+- Use the search bar to find expenses by name.
+- Click the delete button to remove an expense from the list.
+
 
 ## Author
 
