@@ -3,6 +3,7 @@ import ExpenseForm from "./components/ExpenseForm";
 import ExpenseTable from "./components/ExpenseTable";
 import SearchBar from "./components/SearchBar";
 import sampleExpenses from "./data/sampleExpenses";
+import './App.css';  // Importing CSS here
 
 function App() {
   const [expenses, setExpenses] = useState(sampleExpenses);
